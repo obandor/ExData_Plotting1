@@ -1,3 +1,8 @@
+############ 
+## Function plot2
+## Creates a plot with the given data set.
+############
+
 plot2 <- function() {
   plot(powerTable$DateTime,powerTable$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
   
@@ -5,9 +10,7 @@ plot2 <- function() {
   dev.off()
 }
 
-############ 
-## to make this source code self contained, load the file from here:
-############ 
+## Note: to make this source code self contained, load the file from here:
 ## Load file
 
 if (!file.exists("./household_power_consumption.txt")) {

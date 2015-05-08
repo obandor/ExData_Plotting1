@@ -1,3 +1,7 @@
+############ 
+## Function plot3
+## Creates a four plots in a 2X2 arragement with the given data set.
+############
 plot4 <- function() {
   par(mfrow=c(2,2))
   ##Global_active_power
@@ -19,9 +23,9 @@ plot4 <- function() {
   dev.off()
 }
 
-############ 
-## to make this source code self contained, load the file from here:
-############ 
+
+## Note: to make this source code self contained, load the file from here:
+
 ## Load file
 
 if (!file.exists("./household_power_consumption.txt")) {

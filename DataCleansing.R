@@ -1,4 +1,5 @@
-## Load file
+## Load file the file. 
+## Note: This code was replicated inside each plotx.R file.
 
 if (!file.exists("./household_power_consumption.txt")) {
   zipFile <- tempfile()

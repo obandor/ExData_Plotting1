@@ -1,3 +1,7 @@
+############ 
+## Function plot3
+## Creates a plot with the given data set.
+############
 plot3 <- function() {
   plot(powerTable$DateTime,powerTable$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering")
   lines(powerTable$DateTime,powerTable$Sub_metering_2,col="red")
@@ -8,9 +12,9 @@ plot3 <- function() {
   dev.off()
 }
 
-############ 
-## to make this source code self contained, load the file from here:
-############ 
+
+## Note: to make this source code self contained, load the file from here:
+
 ## Load file
 
 if (!file.exists("./household_power_consumption.txt")) {

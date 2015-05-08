@@ -1,4 +1,9 @@
 
+############ 
+## Function plot1
+## Creates a histogram with the given data set.
+############ 
+
 plot1 <- function() {
   hist(powerTable$Global_active_power, main = paste("Global Active Power"), col="red", xlab="Global Active Power (kilowatts)")
   
@@ -6,9 +11,9 @@ plot1 <- function() {
   dev.off()
 }
 
-############ 
-## to make this source code self contained, load the file from here:
-############ 
+
+## Note: to make this source code self contained, load the file from here:
+
 ## Load file
 
 if (!file.exists("./household_power_consumption.txt")) {
